@@ -1,1 +1,3 @@
-# cam-rod.github.io
+# Hello
+
+[Check out my actual website!](https://camrod.me)
