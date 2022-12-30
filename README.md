@@ -33,5 +33,6 @@ The good and the bad news is I didn't really update stuff a lot before, so you'r
 
 _Certain Git commits are signed by my SSH keys. Provided below are the fingerprints and associated email addresses for my current SSH keys. Validate them against [my GitHub account](https://github.com/cam-rod.keys)._
 
-- `rod dot cam2014 plus dev at gmail dot com`: `SHA256:8cuhkUme3lHJdRGEx8XXEJA1QZGWkiAH1lVE182gAUc`
-- `carodrig at redhat dot com`: `SHA256:ckClhxzxyIs4aI5OGuTdxhgoFPDmdSkSZK6K0GNqyFE`
+- [dev@camrod.me](mailto:dev@camrod.me): `SHA256:eCMCp6KOwt0LpKZh1U//u7hbnzgJTponI6XPSgy2HN0`
+- [carodrig@redhat.com](mailto:carodrig@redhat.com): `SHA256:ckClhxzxyIs4aI5OGuTdxhgoFPDmdSkSZK6K0GNqyFE`
+
