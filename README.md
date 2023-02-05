@@ -8,7 +8,7 @@ Ah yeah, that old thing. I'm currently in the process of building a new website 
 
 ## Ok, so when will the new site be ready?
 
-Soon™. Jokes aside, I'll be working on the site over the holidays, so you should see progressive updates as I add pages and content.
+Soon™. Jokes aside, I'll be working on the site over the ~~holidays~~ next couple of months 🫥, so you should see progressive updates as I add pages and content.
 
 ## What will the new site look like?
 
@@ -24,15 +24,15 @@ The good and the bad news is I didn't really update stuff a lot before, so you'r
 - **[LinkedIn](https://linkedin.com/in/cam-rod)** - documenting my professional and volumteer experience
 - **[Tumblr](https://cam-rod.tumblr.com)** - silent placeholder for my Twitter (rip)
 - **[Twitter](https://twitter.com/Racer_77)** - I don't use it anymore, but it's there for the historical value
-- **[My email](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** - that link is to catch the spam bots, you can find it at the bottom of this page.
+- **[My email](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** - _humans, check the next section._
 - **[cam-rod.github.io](https://github.com/cam-rod/cam-rod.github.io)** - watch this website get built!
 
+## Verification
+
+Certain Git commits are signed by my SSH keys. That was kinda weird and not fully supported. Instead, I've created a new, stronger GPG keyset. It encompasses both emails I usually associate with my dev work, but the main address is `dev at camrod dot me`. Retrieve the matching GPG key and verify that the fingerprint is **`4DD2 0D5D F015 9663 DBC2 822A 4C56 9033 D552 7E72`**.
+
+For completeness, I've cross-signed it with my older, unused keypair. That one is only associated with the address `rod dot cam2014 plus dev at gmail dot com`. The fingerprint is **`8174 914B 8B70 4F2B 5E18 29F7 9EC7 30E4 6905 A7A6`**.
+
+For SSH authentication (and signed commits), you can find all of my keys [on my GitHub profile](https://github.com/cam-rod.keys). You might notice that one of those keys matches my GPG authentication subkey; those are the same key.
+
 \- Cam
-
----
-
-_Certain Git commits are signed by my SSH keys. Provided below are the fingerprints and associated email addresses for my current SSH keys. Validate them against [my GitHub account](https://github.com/cam-rod.keys)._
-
-- [dev@camrod.me](mailto:dev@camrod.me): `SHA256:eCMCp6KOwt0LpKZh1U//u7hbnzgJTponI6XPSgy2HN0`
-- [carodrig@redhat.com](mailto:carodrig@redhat.com): `SHA256:ckClhxzxyIs4aI5OGuTdxhgoFPDmdSkSZK6K0GNqyFE`
-
