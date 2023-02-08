@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Hello, I'm Cam.
 
 _[Links!](https://camrod.me/#links)_
