@@ -1,27 +1,23 @@
 {
-    "subject": "acct:camrod@pleroma.envs.net",
+    "subject": "acct:camrod@techhub.social",
     "aliases": [
-      "https://pleroma.envs.net/users/camrod"
+        "https://techhub.social/@camrod",
+        "https://techhub.social/users/camrod"
     ],
     "links": [
-      {
-        "rel": "http://webfinger.net/rel/profile-page",
-        "type": "text/html",
-        "href": "https://pleroma.envs.net/users/camrod"
-      },
-      {
-        "rel": "self",
-        "type": "application/activity+json",
-        "href": "https://pleroma.envs.net/users/camrod"
-      },
-      {
-        "rel": "self",
-        "type": "application/ld+json; profile=\"https://www.w3.org/ns/activitystreams\"",
-        "href": "https://pleroma.envs.net/users/camrod"
-      },
-      {
-        "rel": "http://ostatus.org/schema/1.0/subscribe",
-        "template": "https://pleroma.envs.net/ostatus_subscribe?acct={uri}"
-      }
+        {
+            "rel": "http://webfinger.net/rel/profile-page",
+            "type": "text/html",
+            "href": "https://techhub.social/@camrod"
+        },
+        {
+            "rel": "self",
+            "type": "application/activity+json",
+            "href": "https://techhub.social/users/camrod"
+        },
+        {
+            "rel": "http://ostatus.org/schema/1.0/subscribe",
+            "template": "https://techhub.social/authorize_interaction?uri={uri}"
+        }
     ]
-  }
+}
