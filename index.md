@@ -26,7 +26,7 @@ The good and the bad news is I didn't really update stuff a lot before, so you'r
 
 - **[GitHub](https://github.com/cam-rod)** - coding for work and fun
 - **[LinkedIn](https://linkedin.com/in/cam-rod)** - documenting my professional and volunteer experience
-- **[@camrod@camrod.me](https://camrod.me/fediverse)** - permalink to my fediverse account, currently an Akkoma instance at pleroma.envs.net
+- **[@camrod@camrod.me](https://camrod.me/fediverse)** - permalink to my fediverse account, currently a Mastodon instance at techhub.social
 - **[My email](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** - _humans, check the next section._
 - **[cam-rod.github.io](https://github.com/cam-rod/cam-rod.github.io)** - watch this website get built!
 
