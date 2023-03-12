@@ -1,0 +1,8 @@
+{
+    "theme": "minima",
+    "timezone": "America/Toronto",
+    "encoding": "utf-8",
+    "include": [
+        ".well-known"
+    ]
+}

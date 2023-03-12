@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>404 Not Found</title>
-    </head>
-    <body>
-        <h1>404 Not Found</h1>
-        <p>Sorry, this page couldn't be found. Try again later, or look it up in the <a href="https://web.archive.org">Wayback Machine</a>.</p>
-    </body>
-</html>
+---
+layout: default
+title: 404 Not Found
+html_scripts:
+  - wayback_redirect.js
+---
+<h1>404 Not Found</h1>
+<p>Sorry, this page couldn't be found. Try again later, or look it up in the <a id="referrer-page"
+    href="https://web.archive.org" rel="noopener" target="_blank">Wayback Machine</a>.</p>
