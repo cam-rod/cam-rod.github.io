@@ -2,27 +2,39 @@
 <html>
 
 <head>
-  {% if page.html_head %}
-    {% for header in page.html_head %}
-      {{ header }}
+  {% if page.html_heads %}
+    {% for head in page.html_head %}
+      {{ head }}
     {% endfor %}
   {% endif %}
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% if page.html_styles %}
+    {% for styler in page.html_styles %}
+      <link rel="stylesheet" href="/assets/css/{{ styler }}"/>
+    {% endfor %}
+  {% endif %}
+
   {% if page.html_scripts %}
-    {% for src in page.html_scripts %}
-      <script src="assets/js/{{ src }}"></script>
+    {% for script in page.html_scripts %}
+      <script src="/assets/js/{{ script }}"></script>
     {% endfor %}
   {% endif %}
+
   <title>{{ page.title | default: site.title }}</title>
 </head>
 
 <body>
   <nav>
-    <ul>
-      <li><a href="/">Home, theoretically</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/projects">Projects</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
+    <details>
+      <summary>Navigation links (not working yet)</summary>
+      <ul>
+        <li><a href="/">Home, theoretically</a></li>
+        <li><a href="/404">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+    </details>
   </nav>
   {{ content }}
 </body>
