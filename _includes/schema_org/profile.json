@@ -1,0 +1,22 @@
+{
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Cameron Rodriguez",
+    "url": "https://camrod.me",
+    "jobTitle": "Software Engineering Intern",
+    "worksFor": {
+        "@type": "Organization",
+        "name": "Red Hat",
+        "department": "WildFly Elytron",
+        "location": "Toronto, Canada"
+    },
+    "hasOccupation": {
+        "@type": "Occupation",
+        "name": "Computer Engineering student",
+        "educationRequirements": "BASc in Computer Engineering",
+        "description": "Finished 3rd year, currently on 16-month co-op",
+        "url": "https://ece.utoronto.ca"
+    },
+    "email": "hey@camrod.me",
+    "image": "https://camrod.me/assets/img/camrod-profile.jpg"
+}
