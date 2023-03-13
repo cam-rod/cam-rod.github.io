@@ -2,6 +2,8 @@
 layout: default
 title: Message me | Cameron Rodriguez
 permalink: /encrypt
+html-scripts:
+  - encrypt-message.js
 ---
 
 <header>
@@ -14,20 +16,32 @@ permalink: /encrypt
 </p>
 
 <p>
-  This page uses a local copy of <a href="https://github.com/openpgpjs/openpgpjs/">OpenPGP.js 5.7.0</a> to perform the encryption. You can <a href="/assets/js/openpgp.min.js">view the minified Javascript of OpenPGP.js </a>, and also <a href="/assets/js/message.js">the script running this page</a>.
+  This page uses HTML5 and a local copy of <a href="https://github.com/openpgpjs/openpgpjs/">OpenPGP.js 5.7.0</a> to perform the encryption. You can <a href="/assets/js/openpgp.min.js">view the minified Javascript of OpenPGP.js </a>, and also <a href="/assets/js/encrypt-message.js">the script running this page</a>.
 </p>
 
-<form id="encrypt-message">
-  <label>Upload the public key:</label>
-  <input type="file" name="publickey-file" accept="text/plain,.asc">
+<hr>
+
+<form id="encrypt-message" enctype="multipart/form-data" method="post">
+  <p>
+    <label>Upload the public key:</label>
+    <input type="file" name="publickey-file" id="publickey-file" accept="text/plain,.asc"/><br>
+  </p>
   
-  <label>Or paste the armored public key below:</label>
-  <textarea name="publickey-text" rows="10" cols="70"
-    placeholder="Include the header -----BEGIN PGP PUBLIC KEY BLOCK----- and footer -----END PGP PUBLIC KEY BLOCK-----"/>
+  <p>
+    <label>Or paste the armored public key below:</label><br>
+    <textarea name="publickey-text" id="publickey-text" rows="10" cols="80"
+        placeholder="Include BEGIN PGP PUBLIC KEY BLOCK and END PGP PUBLIC KEY BLOCK"></textarea>
+  </p>
   
-  <label>Enter your message:</label>
-  <textarea name="plaintext-message" rows="20" cols="80"/>
-  <button name="encrypt-button">Encrypt</button>
+  <p>
+    <label>Enter your message:</label><br>
+    <textarea name="plaintext-message" id="plaintext" rows="10" cols="80"></textarea><br>
+    <button name="encrypt-button" type="submit">Encrypt</button>
+  </p>
 </form>
 
-<label>Copy the full encrypted message:</label>
+<p>
+  <label>Copy the full encrypted message and send it over email or another platform:</label><br>
+  <textarea name="ciphertext-message" id="ciphertext" rows="10" cols="80" disabled="false">adsfdsf</textarea><br>
+  <button name="copy-ciphertext" type="submit">Copy encryptedmessage</button>
+</p>
