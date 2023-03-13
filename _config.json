@@ -1,11 +1,22 @@
 {
+    "name": "Cameron Rod",
     "theme": "minima",
     "timezone": "America/Toronto",
     "sass": {
         "sass_dir": "assets/css"
     },
-    "encoding": "utf-8",
     "include": [
         ".well-known"
+    ],
+    "defaults": [
+        {
+            "scope": {
+                "path": "",
+                "type": "pages"
+            },
+            "value": {
+                "layout": "default"
+            }
+        }
     ]
 }
