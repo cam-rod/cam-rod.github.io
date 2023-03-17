@@ -13,11 +13,11 @@
     {% if page.og_image %}
       <meta property="og:image" content="{{ page.og_image }}"/>
       <meta property="twitter:image" content="{{ page.og_image }}"/>
-      <meta property="twitter:image:alt" content="{{ page.twitter_image_alt}}"
+      <meta property="twitter:image:alt" content="{{ page.twitter_image_alt}}"/>
     {% else %}
-      <meta property="og:image" content="{{ '/assets/img/og-banner-v1.jpg' | absolute_url }}"
-      <meta property="twitter:image" content="{{ '/assets/img/og-banner-v1.jpg' | absolute_url }}"
-      <meta property="twitter:image:alt" content="A photo of Cameron Rodriguez, smiling"
+      <meta property="og:image" content="{{ '/assets/img/og-banner-v1.jpg' | absolute_url }}"/>
+      <meta property="twitter:image" content="{{ '/assets/img/og-banner-v1.jpg' | absolute_url }}"/>
+      <meta property="twitter:image:alt" content="A photo of Cameron Rodriguez, smiling"/>
     {% endif %}
     {% if page.og_url %}
       <meta property="og:url" content="{{ page.og_url }}"/>
@@ -35,7 +35,7 @@
 
 
     {% if page.html_heads %}
-      {% for head in page.html_head %}
+      {% for head in page.html_heads %}
         {{ head }}
       {% endfor %}
     {% endif %}
