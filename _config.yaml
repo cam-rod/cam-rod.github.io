@@ -1,0 +1,10 @@
+name: Cameron Rodriguez
+theme: minima
+timezone: "America/Toronto"
+include: [ "/.well-known" ]
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    value:
+      layout: default
