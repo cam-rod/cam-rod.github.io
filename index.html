@@ -6,7 +6,7 @@ html_heads:
 
 <header>
   <h1>Hi, I'm Cameron.</h1>
-  <script id="profile-schema" type="application/ld+json">{% include schema_org/profile.json %}</script>
+  <script id="profile-schema" type="application/ld+json">{% include 'schema_org/profile.json' %}</script>
 </header>
 
 <main>
@@ -34,7 +34,7 @@ html_heads:
 </main>
 
 <section>
-  <h2>Links</h2>
+  <h2 id="links">Links</h2>
     <ul>
       <li><strong><a href="https://github.com/cam-rod">GitHub</a> (@cam-rod)</strong> - coding for work and fun</li>
       <li><strong><a href="https://linkedin.com/in/cam-rod">LinkedIn</a> (in/cam-rod)</strong> - documenting my professional and volunteer experience</li>
@@ -47,7 +47,7 @@ html_heads:
 
 <section>
   <header>
-    <h2>Verification</h2>
+    <h2 id="verification">Verification</h2>
   </header>
 
   <p>Certain Git commits are signed by my SSH keys. That was kinda weird and not fully supported. Instead, I've created a new, stronger GPG keyset. It contains two emails I've associated with my dev work, but the main address is <code>dev at camrod dot me</code>. Retrieve the matching GPG key from the Ubuntu keyserver or <a href="https://envs.net/~camrod/files/keys/4DD20D5DF0159663DBC2822A4C569033D5527E72.gpg.asc">my profile on envs.net</a>, and verify the fingerprint is <strong><code>4DD2 0D5D F015 9663 DBC2 822A 4C56 9033 D552 7E72</code></strong>. I can receive encrypted messages this way as well.</p>
