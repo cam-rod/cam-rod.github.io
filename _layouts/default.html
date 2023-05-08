@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-CA">
   <head>
     <title>{{ page.title | default: 'Cameron Rodriguez' }}</title>
     <meta name="author" content="{{ page.author | default: 'Cameron Rodriguez' }}"/>
@@ -65,17 +65,19 @@
   </head>
 
   <body>
-    <nav>
-      <details>
-        <summary>Navigation links (not working yet)</summary>
-        <ul>
-          <li><a href="/">Home, theoretically</a></li>
-          <li><a href="/404">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/blog">Blog</a></li>
-        </ul>
-      </details>
-    </nav>
+    <header>
+      <nav>
+        <details>
+          <summary>Navigation links</summary>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </details>
+      </nav>
+    </header>
     {{ content }}
   </body>
 </html>
