@@ -1,7 +1,13 @@
 ---
 ---
 @import "fonts";
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: 'Red Hat Text', 'Cantarell', 'Noto Sans', sans-serif;
+}
+
 h1 { font-family: 'Red Hat Display', 'Cantarell', sans-serif; }
 h2, h3, h4, h5, h6 { font-family: 'Cantarell', 'Noto Sans', sans-serif; }
-body { font-family: 'Red Hat Text', 'Cantarell', 'Noto Sans', sans-serif; }
 code, pre { font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace; }
