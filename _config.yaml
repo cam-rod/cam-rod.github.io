@@ -1,5 +1,4 @@
 name: Cameron Rodriguez
-theme: minima
 timezone: "America/Toronto"
 include: [ "/.well-known" ]
 defaults:
@@ -8,6 +7,10 @@ defaults:
     values:
       layout: "default"
       image: /assets/img/og-banner-v1.jpg
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
 
 # SEO
 title: Cameron Rodriguez
