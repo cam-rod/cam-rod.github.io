@@ -5,6 +5,25 @@ include: [ "/.well-known" ]
 defaults:
   - scope:
       path: ""
-      type: pages
-    value:
-      layout: default
+    values:
+      layout: "default"
+      image: /assets/img/og-banner-v1.jpg
+
+# SEO
+title: Cameron Rodriguez
+description: Cam's website and future blog
+url: https://camrod.me
+locale: en_CA
+logo: /assets/img/camrod-profile.jpg
+author:
+  name: Cameron Rodriguez
+  picture: /assets/img/camrod-profile.jpg
+  url: https://camrod.me
+social:
+  - https://github.com/cam-rod
+  - https://linkedin.com/in/cam-rod
+  - https://techhub.social/@camrod
+  - https://facebook.com/cam.racer77
+twitter:
+  username: Racer_77
+  card: summary
