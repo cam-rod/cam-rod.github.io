@@ -3,8 +3,10 @@
   <head>
     {% if page.force_title %}
       <title>{{ page.force_title | default: 'Cameron Rodriguez' }}</title>
+    {% elsif page.title %}
+      <title>{{ page.title | append: ' | Cameron Rodriguez' }}</title>
     {% else %}
-      <title>{{ page.title | append: ' | Cameron Rodriguez'  | default: 'Cameron Rodriguez' }}</title>
+      <title>Cameron Rodriguez</title>
     {% endif %}
 
     {% if page.html_heads %}
