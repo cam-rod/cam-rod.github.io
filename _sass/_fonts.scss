@@ -47,3 +47,15 @@
     font-weight: 400;
     src: local("Fira Code Regular"), local("FiraCode-Regular"), url(../fonts/Fira_Code/FiraCode-VariableFont_wght.woff2) format('woff2');
 }
+
+body {
+    background: #ffffff;
+    color: #000000;
+    font-family: 'Red Hat Text', 'Cantarell', 'Noto Sans', sans-serif;
+}
+
+// Applying fonts
+h1 { font-family: 'Red Hat Display', 'Cantarell', sans-serif; }
+h2, h3, h4, h5, h6 { font-family: 'Cantarell', 'Noto Sans', sans-serif; }
+code, pre { font-family: 'Fira Code', 'Cascadia Code', 'Consolas', monospace; }
+strong, b { font-weight: 600 }
