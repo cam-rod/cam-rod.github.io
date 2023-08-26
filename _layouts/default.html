@@ -24,6 +24,7 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% if page.html_styles %}
@@ -60,14 +61,19 @@
       <p>
         The content of my website (<a rel="cc:attributionURL dct:creator" property="cc:attributionName"
                         href="https://camrod.me">Cameron Rodriguez</a>) is licensed under
-        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
-            rel="license noopener noreferrer">CC BY-SA 4.0<img
-          style="margin-left:3px;vertical-align:middle;" alt="Creative Commons CC icon"
-          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"><img
-          style="margin-left:3px;vertical-align:middle;" alt="Creative Commons BY icon"
-          src="https://mirrors.creativecommons.org/presskit/icons/by.svg"><img
-          style="margin-left:3px;vertical-align:middle;" alt="Creative Commons SA icon"
-          src="https://mirrors.creativecommons.org/presskit/icons/sa.svg"></a>
+        <a class="copyright" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+            rel="license noopener noreferrer">
+          <span class="copyright-text">CC BY-SA 4.0</span>
+          <span class="copyright-image">
+            <img alt="Creative Commons CC icon" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
+          </span>
+          <span class="copyright-image">
+            <img alt="Creative Commons BY icon" src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
+          </span>
+          <span class="copyright-image">
+            <img alt="Creative Commons SA icon" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg">
+          </span>
+        </a>
       </p>
     </footer>
   </body>
