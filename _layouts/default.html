@@ -9,11 +9,9 @@
       <title>Cameron Rodriguez</title>
     {% endif %}
 
-    {% if page.html_heads %}
-      {% for head in page.html_heads %}
-        {{ head }}
-      {% endfor %}
-    {% endif %}
+    {% for head in page.html_heads %}
+      {{ head }}
+    {% endfor %}
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -24,12 +22,16 @@
     <meta name="msapplication-TileColor" content="#2b5797">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% if layout.is_post %}
+      <link rel="stylesheet" href="assets/css/post.css">
+    {% endif %}
     {% if page.html_styles %}
       {% for styler in page.html_styles %}
-        <link rel="stylesheet" href="/assets/css/{{ styler }}"/>
+        <link rel="stylesheet" href="/assets/css/{{ styler }}">
       {% endfor %}
     {% endif %}
 
@@ -49,9 +51,10 @@
           <summary>Navigation links</summary>
           <ul>
             <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/projects">Projects</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li><a href="/resume">Resume</a></li>
           </ul>
         </details>
       </nav>
