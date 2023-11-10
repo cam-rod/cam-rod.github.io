@@ -1,83 +1,74 @@
 <!DOCTYPE html>
 <html lang="en-CA">
-  <head>
-    {% if page.force_title %}
-      <title>{{ page.force_title | default: 'Cameron Rodriguez' }}</title>
-    {% elsif page.title %}
-      <title>{{ page.title | append: ' | Cameron Rodriguez' }}</title>
-    {% else %}
-      <title>Cameron Rodriguez</title>
-    {% endif %}
+<head>
+  {% if page.force_title %}
+    <title>{{ page.force_title | default: 'Cameron Rodriguez' }}</title>
+  {% elsif page.title %}
+    <title>{{ page.title | append: ' | Cameron Rodriguez' }}</title>
+  {% else %}
+    <title>Cameron Rodriguez</title>
+  {% endif %}
 
-    {% for head in page.html_heads %}
-      {{ head }}
+  {% for head in page.html_heads %}
+    {{ head }}
+  {% endfor %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e77d7">
+  <meta name="msapplication-TileColor" content="#2b5797">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  {% if layout.is_post %}
+    <link rel="stylesheet" href="assets/css/post.css">
+  {% endif %}
+  {% if page.html_styles %}
+    {% for styler in page.html_styles %}
+      <link rel="stylesheet" href="/assets/css/{{ styler }}">
     {% endfor %}
+  {% endif %}
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2e77d7">
-    <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+  {% if page.html_scripts %}
+    {% for script in page.html_scripts %}
+      <script src="/assets/js/{{ script }}"></script>
+    {% endfor %}
+  {% endif %}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.css">
-    {% if layout.is_post %}
-      <link rel="stylesheet" href="assets/css/post.css">
-    {% endif %}
-    {% if page.html_styles %}
-      {% for styler in page.html_styles %}
-        <link rel="stylesheet" href="/assets/css/{{ styler }}">
-      {% endfor %}
-    {% endif %}
+  {% seo title = false %}
+</head>
 
-    {% if page.html_scripts %}
-      {% for script in page.html_scripts %}
-        <script src="/assets/js/{{ script }}"></script>
-      {% endfor %}
-    {% endif %}
-
-    {% seo title=false %}
-  </head>
-
-  <body>
-    <header>
-      <nav>
-        <details>
-          <summary>Navigation links</summary>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/resume">Resume</a></li>
-          </ul>
-        </details>
-      </nav>
-    </header>
-    {{ content }}
-    <footer>
-      <p>
-        The content of my website (<a rel="cc:attributionURL dct:creator" property="cc:attributionName"
-                        href="https://camrod.me">Cameron Rodriguez</a>) is licensed under
-        <a class="copyright" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
-            rel="license noopener noreferrer">
-          <span class="copyright-text">CC BY-SA 4.0</span>
-          <span class="copyright-image">
-            <img alt="Creative Commons CC icon" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg">
-          </span>
-          <span class="copyright-image">
-            <img alt="Creative Commons BY icon" src="https://mirrors.creativecommons.org/presskit/icons/by.svg">
-          </span>
-          <span class="copyright-image">
-            <img alt="Creative Commons SA icon" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg">
-          </span>
-        </a>
-      </p>
-    </footer>
-  </body>
+<body>
+<header>
+  <nav>
+    <details>
+      <summary>Navigation links</summary>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+    </details>
+  </nav>
+</header>
+{{ content }}
+<footer>
+  <hr>
+  <p>
+    The content on this website (<a rel="cc:attributionURL dct:creator" property="cc:attributionName"
+                                    href="https://camrod.me">camrod.me</a>)
+    is licensed under <a class="copyright" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank"
+                         rel="license noopener noreferrer"><span class="copyright-text">CC BY-SA 4.0</span></a> unless
+    otherwise stated. Open source is pretty cool.
+  </p>
+</footer>
+</body>
 </html>
