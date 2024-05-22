@@ -1,10 +1,9 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.2"
+group :jekyll_plugins do
+  gem "github-pages", "~> 231"
 
-group :"jekyll-plugins" do
-    gem "jekyll-feed", "~> 0.17.0"
-    gem "jekyll-seo-tag", "~> 2.8.0"
+  gem "csv", "~> 3.3"
+  gem "faraday-retry", "~> 2.2"
+  gem "webrick", "~> 1.8"
 end
-
-

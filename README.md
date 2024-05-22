@@ -1,8 +1,6 @@
 # camrod.me
 
-This is the repo for my personal website, hand-crafted[^1] with the most artisanal HTML, CSS, and JavaScript known to humankind. In theory.
-
-[^1]: hand-assembled*, for legal reasons
+This is the repo for my personal website, hand-crafted.
 
 ## Licensing
 
